@@ -7,9 +7,10 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     return '''
+<h2> Please input text string then click Submit button</h2>
      <form action="/echo_user_input" method="POST">
          <input name="user_input">
-         <input type="submit" value="Submit!">
+         <input type="submit" value="Submit">
      </form>
      '''
 
