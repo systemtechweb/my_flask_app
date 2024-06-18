@@ -18,3 +18,8 @@ def main():
 def echo_input():
     input_text = request.form.get("user_input", "")
     return "You entered: " + input_text
+
+
+@app.route("/svs", methods=["GET"])
+def echo_input():
+    return "HELLO" 
