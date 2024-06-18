@@ -21,5 +21,17 @@ def echo_input():
 
 
 @app.route("/svs", methods=["GET"])
-def echo_input():
-    return "HELLO" 
+def svs():
+   return "HELLO"
+
+
+def wutt():
+   return "WUTT"
+
+def create_app(config_filename):
+    app = Flask(__name__)
+    app.config.from_pyfile(config_filename)
+
+
+
+    return app
